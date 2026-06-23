@@ -42,7 +42,7 @@ def is_small_server():
             """,
             [user.id for user in ctx.guild.members],
         )
-        if users and users > 150:
+        if users and users > 200:
             raise exceptions.ServerTooBig(ctx.guild.member_count)
 
         return True
